@@ -5,7 +5,7 @@ $word_list = Array(
     'generator',
     'apples',
     'oranges',
-    'milk'
+    'milk',
     );
 
 $number_list = '0123456789';
