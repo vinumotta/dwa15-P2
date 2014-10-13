@@ -16,7 +16,7 @@ function generatePassword($words, $numbers, $symbols) {
     global $word_list, $number_list, $symbol_list;
     $password = '';
     for ($i = 0; $i < $words; $i++) {
-        $password .= $word_list[(rand() % $word_list.count())];
+        $password .= $word_list[(rand() % count($word_list))];
         if ($i != $words -1)
             $password .= '-';
     }

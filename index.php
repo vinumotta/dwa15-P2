@@ -8,13 +8,19 @@
 	<title>Password Generator</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
+	<style>
+		.container {
+			text-align:center;
+		}
+	</style>
+
 	<?php 
 	require 'password.php';
 
 	function display()
 	{
 		$password  = generatePassword($_POST["words"], $_POST["numbers"], $_POST["symbols"]);
-	    echo "<p> Your password is :" .$password. "</p>"; 
+	    echo "<h2 color='blue'> Your password is : " .$password. "</h2>"; 
 	}
 	if(isset($_POST['submit']))
 	{
@@ -25,34 +31,35 @@
 		
 </head>
 
-<body class='night'>
+<body class='body'>
 
+	<div class='container'>
 	
-	<h1>
-	xkcd Password Generator</h1>
+		<h1>
+		xkcd Password Generator</h1>
 
-	<form method='post' action='index.php'>
-    Enter Password Parameters<br>
-    <input type='text' name='words'>Number of words<br>
-    <input type="checkbox" name="numbers" value="numbers">Include a number<br>
-	<input type="checkbox" name="symbols" value="symbols">Include a symbol
-    <input type='submit' value='Generate a password!' name='submit'><br>
-	</form>
+		<form method='post' action='index.php'>
+	    Enter Password Parameters<br>
+	    <input type='text' name='words'>Number of words<br>
+	    <input type="checkbox" name="numbers" value="numbers">Include a number<br>
+		<input type="checkbox" name="symbols" value="symbols">Include a symbol
+	    <input type='submit' value='Generate a password!' name='submit'><br>
+		</form>
 
 
 
-	<br><p>This page helps you come up with a readable password that you can remember and is hard to guess as described by the xkcd comic below. </h3><p>
+		<br><p>This page helps you come up with a readable password that you can remember and is hard to guess as described by the xkcd comic below. </h3><p>
 
-	<p class='details'>
-			<a href='http://xkcd.com/936/'>xkcd password strength</a><br>
-		
-			<a href='http://xkcd.com/936/'>
-				<img class='comic' src='http://imgs.xkcd.com/comics/password_strength.png' alt='xkcd style passwords'>
-			</a>
-			<br>
-	</p>
+		<p class='details'>
+				<a href='http://xkcd.com/936/'>xkcd password strength</a><br>
+			
+				<a href='http://xkcd.com/936/'>
+					<img class='comic' src='http://imgs.xkcd.com/comics/password_strength.png' alt='xkcd style passwords'>
+				</a>
+				<br>
+		</p>
 
-	
+	</div>
 
 </body>
 </html>
