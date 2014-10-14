@@ -3,11 +3,14 @@
 ## Live URL
 <http://p2.vinumotta.com>
 
+## Github repo
+<https://github.com/vinumotta/dwa15-P2>
+
 ## Description
 A simple utility for generating [xkcd style passwords](http://xkcd.com/936/).
 
 ## Demo
-I'll be attending my Wednesday section with Johanna to do an in-person demo.
+I'll be posting the Jing screencast on here- <http://screencast.com/t/nZfWUUakJ>
 
 ## Details for teaching team
 No login required.
